@@ -6,7 +6,7 @@ Sum_numbers = 0
 
 
 for i in range(num):
-    Score = float(input('Enter the programming score:'))
+    Score = float(input("Enter the programming score: "))
 
     if Score > Max_number:
         Max_number = Score

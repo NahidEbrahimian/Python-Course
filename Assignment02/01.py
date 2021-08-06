@@ -1,6 +1,6 @@
 Sum = 0
 
-while(True):
+while True:
 
     x = input("If you want to continue enter a number else type 'exit': ")
 
