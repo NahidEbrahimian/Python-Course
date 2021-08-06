@@ -18,7 +18,7 @@
 
 #
 
-## Assignment02
+## Assignment03
 - 01: HangMan Game
 - 02: Random array with non-duplicate numbers
 - 03: Check that input array is sorted
