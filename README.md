@@ -23,3 +23,12 @@
 - 02: Random array with non-duplicate numbers
 - 03: Check that input array is sorted
 - 04: Snake with **_N_** length and with _'*'_ and _'#'_ Characters
+
+#
+
+## Assignment06
+- Implementation of store project using **List and Dictionary**
+
+
+
+
