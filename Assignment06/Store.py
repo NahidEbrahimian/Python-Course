@@ -94,7 +94,7 @@ def save_qrcode():
         print("This product ID is not exist")
 
 
-def Buy():
+def buy():
     show_list()
     print("****shopping****")
     Shopping_cart = []
@@ -129,7 +129,7 @@ def Buy():
             break
 
 
-def Exit():
+def exit():
     data_file = open('databese.txt', 'w')
     for i, product in enumerate(PRODUCTS):
         data_file.write(
@@ -184,16 +184,16 @@ while True:
         save_qrcode()
 
     elif choice == 7:
-        Buy()
+        buy()
 
     elif choice == 8:
-        Exit()
+        exit()
         break
 
     count = input("If you want to continue enter 'y' : ")
     if count == 'y':
         continue
     else:
-        Exit()
+        exit()
         break
 
