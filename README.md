@@ -29,6 +29,13 @@
 ## Assignment06
 - Implementation of store project using **List and Dictionary**
 
+#
+
+## Assignment09
+- **Object Oriented**
+- 01: Mathematical operations on two fractions
+- 02: Sum and subtraction two time, convert time to second and second to time
+
 
 
 
