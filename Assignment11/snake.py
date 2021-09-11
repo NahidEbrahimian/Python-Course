@@ -2,13 +2,13 @@ import random
 import arcade
 
 
-class Object():
+class Object(arcade.Sprite):
     def __init__(self, w, h):
         self.center_x = random.randint(20, w - 20)
         self.center_y = random.randint(20, h - 20)
 
 
-class Apple(arcade.Sprite, Object):
+class Apple(Object):
     def __init__(self, w, h):
         arcade.Sprite.__init__(self)
         Object.__init__(self, w, h)
@@ -22,7 +22,7 @@ class Apple(arcade.Sprite, Object):
         self.img.draw()
 
 
-class Pear(arcade.Sprite, Object):
+class Pear(Object):
     def __init__(self, w, h):
         arcade.Sprite.__init__(self)
         Object.__init__(self, w, h)
@@ -34,7 +34,7 @@ class Pear(arcade.Sprite, Object):
         self.img.draw()
 
 
-class Bomb(arcade.Sprite, Object):
+class Bomb(Object):
     def __init__(self, w, h):
         arcade.Sprite.__init__(self)
         Object.__init__(self, w, h)
