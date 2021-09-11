@@ -14,7 +14,7 @@ class Apple(arcade.Sprite, Object):
         Object.__init__(self, w, h)
         self.color = arcade.color.RED
         self.r = 8
-        self.img = arcade.Sprite('stiker/apple1.png')
+        self.img = arcade.Sprite('img/apple1.png')
         self.img.center_x = self.center_x
         self.img.center_y = self.center_y
 
@@ -26,7 +26,7 @@ class Pear(arcade.Sprite, Object):
     def __init__(self, w, h):
         arcade.Sprite.__init__(self)
         Object.__init__(self, w, h)
-        self.img = arcade.Sprite('stiker/pear1.png')
+        self.img = arcade.Sprite('img/pear1.png')
         self.img.center_x = self.center_x
         self.img.center_y = self.center_y
 
@@ -38,7 +38,7 @@ class Bomb(arcade.Sprite, Object):
     def __init__(self, w, h):
         arcade.Sprite.__init__(self)
         Object.__init__(self, w, h)
-        self.img = arcade.Sprite('stiker/bomb1.png')
+        self.img = arcade.Sprite('img/bomb1.png')
         self.img.center_x = self.center_x
         self.img.center_y = self.center_y
 
