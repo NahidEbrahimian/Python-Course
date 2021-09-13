@@ -56,6 +56,15 @@
 
 ![Capture03](https://user-images.githubusercontent.com/82975802/132896521-5f7319d5-23bb-4c75-9f29-03ca6a9a4e5e.PNG)
 
+#
+
+## Assignment12
+
+- **Arcade Games**
+
+- Silver SpaceCraft using arcade library
+
+![Capture12](https://user-images.githubusercontent.com/82975802/133097339-a13691a5-905f-4c2a-bb05-441c45f9912f.PNG)
 
 
 
