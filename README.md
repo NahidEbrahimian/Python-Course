@@ -62,7 +62,25 @@
 
 - **Arcade Games**
 
-- Silver SpaceCraft using arcade library
+Silver SpaceCraft using arcade library
+
+:white_check_mark: As a result of collision bullet with the enemy ship, enemy ship is destroyed and explodes.
+
+:white_check_mark: The time interval for arrival of enemies is randomly between 2 and 4 seconds.
+
+:white_check_mark: When any enemy or bullet leaves the game screen, its object is removed from the list.
+
+:white_check_mark: Score player
+
+:white_check_mark: SpaceCraft life
+
+:white_check_mark: life of the player decreases with the arrival each enemy to planet
+
+:white_check_mark: Display Game over message
+
+:white_check_mark: Increase the speed of the enemy
+
+:white_check_mark: Play sound for bullet and destroy
 
 ![Capture12](https://user-images.githubusercontent.com/82975802/133097339-a13691a5-905f-4c2a-bb05-441c45f9912f.PNG)
 
