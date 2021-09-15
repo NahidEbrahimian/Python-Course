@@ -70,7 +70,7 @@ Silver SpaceCraft using arcade library
 
 :white_check_mark: When any enemy or bullet leaves the game screen, its object is removed from the list.
 
-:white_check_mark: Score player
+:white_check_mark: Player Score
 
 :white_check_mark: SpaceCraft life
 
