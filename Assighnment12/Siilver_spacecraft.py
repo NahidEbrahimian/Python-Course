@@ -164,10 +164,25 @@ class Game(arcade.Window):
             for j in range(len(self.enemy_list)):
                 if (self.enemy_list[j].center_x - 25 <= self.me.bullet_list[i].center_x <= self.enemy_list[j].center_x +25) and (self.enemy_list[j].center_y - 25 <= self.me.bullet_list[i].center_y <= self.enemy_list[j].center_y + 25):
                     self.enemy_list[j].remove_from_sprite_lists()
-                    # self.me.bullet_list[k].remove_from_sprite_lists()
+                    self.me.bullet_list[i].remove_from_sprite_lists()
                     self.me.score += 1
                     arcade.play_sound(self.explosion_sound)
                     break
+            else:
+                continue
+            break
+
+        # check for delete bullet object)
+        for i in range(len(self.me.bullet_list)):
+            if self.w < self.me.bullet_list[i].center_x < 0 or self.h < self.me.bullet_list[i].center_y < 0:
+                self.enemy_list[j].remove_from_sprite_lists()
+                break
+
+        # check for delete enemy object
+        for i in range(len(self.enemy_list)):
+            if self.enemy_list[i].center_y < 0:
+                self.me.bullet_list[i].remove_from_sprite_lists()
+                break
 
     def on_key_press(self, key, modifiers):
         if key == arcade.key.D:
