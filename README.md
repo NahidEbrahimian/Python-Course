@@ -72,7 +72,7 @@ Silver SpaceCraft using arcade library
 
 :white_check_mark: Player score
 
-:white_check_mark: SpaceCraft life
+:white_check_mark: Player life
 
 :white_check_mark: Life of player decreases with the arrival each enemy to planet
 
