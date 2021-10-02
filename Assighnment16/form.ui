@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Calculator</class>
+ <widget class="QDialog" name="Calculator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>279</width>
+    <height>354</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calculator</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(238, 238, 236)</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="5" column="2">
+    <widget class="QPushButton" name="btn_sign">
+     <property name="minimumSize">
+      <size>
+       <width>31</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 12pt &quot;Segoe UI&quot;;
+font: 300 11pt &quot;Umpush&quot;;
+color: rgb(245, 121, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>+/-</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QPushButton" name="btn_Per">
+     <property name="minimumSize">
+      <size>
+       <width>31</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 12pt &quot;Segoe UI&quot;;
+font: 300 11pt &quot;Umpush&quot;;
+color: rgb(245, 121, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>%</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QPushButton" name="btn_4">
+     <property name="minimumSize">
+      <size>
+       <width>41</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 13pt &quot;Segoe UI&quot;;
+	font: 300 11pt &quot;Umpush&quot;;
+color: rgb(0, 0, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>4</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="3">
+    <widget class="QPushButton" name="btn_sub">
+     <property name="minimumSize">
+      <size>
+       <width>31</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 12pt &quot;Segoe UI&quot;;
+font: 300 11pt &quot;Umpush&quot;;
+color: rgb(245, 121, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="QPushButton" name="btn_5">
+     <property name="minimumSize">
+      <size>
+       <width>41</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 13pt &quot;Segoe UI&quot;;
+	font: 300 11pt &quot;Umpush&quot;;
+color: rgb(0, 0, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>5</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="6">
+    <widget class="QLineEdit" name="textbox">
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 600 15pt &quot;Segoe UI&quot;;
+color: rgb(233, 185, 110);
+border-width: 15px;
+border-height: 15px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="2">
+    <widget class="QPushButton" name="btn_6">
+     <property name="minimumSize">
+      <size>
+       <width>41</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 13pt &quot;Segoe UI&quot;;
+	font: 300 11pt &quot;Umpush&quot;;
+color: rgb(0, 0, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>6</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QPushButton" name="btn_c">
+     <property name="minimumSize">
+      <size>
+       <width>31</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 12pt &quot;Segoe UI&quot;;
+font: 300 11pt &quot;Umpush&quot;;
+color: rgb(245, 121, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>C</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0">
+    <widget class="QPushButton" name="btn_1">
+     <property name="minimumSize">
+      <size>
+       <width>51</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 13pt &quot;Segoe UI&quot;;
+	font: 300 11pt &quot;Umpush&quot;;
+color: rgb(0, 0, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1">
+    <widget class="QPushButton" name="btn_2">
+     <property name="minimumSize">
+      <size>
+       <width>41</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 13pt &quot;Segoe UI&quot;;
+	font: 300 11pt &quot;Umpush&quot;;
+color: rgb(0, 0, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>2</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="2">
+    <widget class="QPushButton" name="btn_3">
+     <property name="minimumSize">
+      <size>
+       <width>41</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 13pt &quot;Segoe UI&quot;;
+	font: 300 11pt &quot;Umpush&quot;;
+color: rgb(0, 0, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>3</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="3">
+    <widget class="QPushButton" name="btn_mul">
+     <property name="minimumSize">
+      <size>
+       <width>41</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 12pt &quot;Segoe UI&quot;;
+font: 300 11pt &quot;Umpush&quot;;
+color: rgb(245, 121, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>×</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="3">
+    <widget class="QPushButton" name="btn_sum">
+     <property name="minimumSize">
+      <size>
+       <width>31</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 12pt &quot;Segoe UI&quot;;
+font: 300 11pt &quot;Umpush&quot;;
+color: rgb(245, 121, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>+</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="2">
+    <widget class="QPushButton" name="btn_eaual">
+     <property name="minimumSize">
+      <size>
+       <width>31</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 12pt &quot;Segoe UI&quot;;
+font: 300 11pt &quot;Umpush&quot;;
+color: rgb(245, 121, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>=</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="0">
+    <widget class="QPushButton" name="btn_0">
+     <property name="minimumSize">
+      <size>
+       <width>31</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 13pt &quot;Segoe UI&quot;;
+	font: 300 11pt &quot;Umpush&quot;;
+color: rgb(0, 0, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="3">
+    <widget class="QPushButton" name="btn_sqrt">
+     <property name="minimumSize">
+      <size>
+       <width>31</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 12pt &quot;Segoe UI&quot;;
+font: 300 11pt &quot;Umpush&quot;;
+color: rgb(245, 121, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>√</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QPushButton" name="btn_7">
+     <property name="minimumSize">
+      <size>
+       <width>41</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 13pt &quot;Segoe UI&quot;;
+	font: 300 11pt &quot;Umpush&quot;;
+color: rgb(0, 0, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>7</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="3">
+    <widget class="QPushButton" name="btn_div">
+     <property name="minimumSize">
+      <size>
+       <width>31</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 12pt &quot;Segoe UI&quot;;
+font: 300 11pt &quot;Umpush&quot;;
+color: rgb(245, 121, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>÷</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="2">
+    <widget class="QPushButton" name="btn_9">
+     <property name="minimumSize">
+      <size>
+       <width>41</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 13pt &quot;Segoe UI&quot;;
+	font: 300 11pt &quot;Umpush&quot;;
+color: rgb(0, 0, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>9</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="QPushButton" name="btn_8">
+     <property name="minimumSize">
+      <size>
+       <width>41</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 13pt &quot;Segoe UI&quot;;
+	font: 300 11pt &quot;Umpush&quot;;
+color: rgb(0, 0, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>8</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="4" colspan="2">
+    <widget class="QPushButton" name="btn_sin">
+     <property name="minimumSize">
+      <size>
+       <width>31</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 12pt &quot;Segoe UI&quot;;
+font: 300 11pt &quot;Umpush&quot;;
+color: rgb(245, 121, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>sin</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="4" colspan="2">
+    <widget class="QPushButton" name="btn_cos">
+     <property name="minimumSize">
+      <size>
+       <width>31</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 12pt &quot;Segoe UI&quot;;
+font: 300 11pt &quot;Umpush&quot;;
+color: rgb(245, 121, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>cos</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="4" colspan="2">
+    <widget class="QPushButton" name="btn_tan">
+     <property name="minimumSize">
+      <size>
+       <width>31</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 12pt &quot;Segoe UI&quot;;
+font: 300 11pt &quot;Umpush&quot;;
+color: rgb(245, 121, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>tan</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="4" colspan="2">
+    <widget class="QPushButton" name="btn_cot">
+     <property name="minimumSize">
+      <size>
+       <width>31</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 12pt &quot;Segoe UI&quot;;
+font: 300 11pt &quot;Umpush&quot;;
+color: rgb(245, 121, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>cot</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="4" colspan="2">
+    <widget class="QPushButton" name="btn_log">
+     <property name="minimumSize">
+      <size>
+       <width>31</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 12pt &quot;Segoe UI&quot;;
+font: 300 11pt &quot;Umpush&quot;;
+color: rgb(245, 121, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>log</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="1">
+    <widget class="QPushButton" name="btn_dot">
+     <property name="minimumSize">
+      <size>
+       <width>31</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{background-color: rgb(238, 238, 236);
+font: 400 13pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);
+border-width: 15px;
+border-height: 20px;
+border-radius: 20px;
+}
+QPushButton:pressed{
+	background-color: rgb(225, 255, 255);
+}r</string>
+     </property>
+     <property name="text">
+      <string>.</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
