@@ -64,26 +64,36 @@
 
 Silver SpaceCraft using arcade library
 
-:white_check_mark: As a result of collision bullet with the enemy ship, enemy ship is destroyed and explodes.
+- [x] As a result of collision bullet with the enemy ship, enemy ship is destroyed and explodes.
 
-:white_check_mark: The time interval for arrival of enemies is randomly between 2 and 4 seconds.
+- [x] The time interval for arrival of enemies is randomly between 2 and 4 seconds.
 
-:white_check_mark: When any enemy or bullet leaves the game screen, its object is removed from the list.
+- [x] When any enemy or bullet leaves the game screen, its object is removed from the list.
 
-:white_check_mark: Player score
+- [x] Player score
 
-:white_check_mark: Player life
+- [x] Player life
 
-:white_check_mark: Life of player decreases with the arrival each enemy to planet
+- [x] Life of player decreases with the arrival each enemy to planet
 
-:white_check_mark: Display game over message
+- [x] Display game over message
 
-:white_check_mark: Increase the speed of the enemy
+- [x] Increase the speed of the enemy
 
-:white_check_mark: Play sound for bullet and destroy
+- [x] Play sound for bullet and destroy
 
 ![Capture12](https://user-images.githubusercontent.com/82975802/133097339-a13691a5-905f-4c2a-bb05-441c45f9912f.PNG)
 
 
+## Assignment16
 
+- GUI calculator using PySide6 library
+
+![02 10 2021_17 09 01_REC](https://user-images.githubusercontent.com/82975802/135719007-7dbc444e-7f6f-4bb6-b891-be0822151ef7.png)
+
+
+
+
+
+#
 
