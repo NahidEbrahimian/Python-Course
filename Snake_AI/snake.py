@@ -28,7 +28,7 @@ class Snake(arcade.Sprite):
             else:
                 arcade.draw_circle_filled(item[0], item[1], self.r, self.color1)
 
-    def Eat(self):
+    def eat(self):
         self.score += 1
 
     def move(self):

@@ -33,7 +33,7 @@ class Game(arcade.Window):
         # Apple position
         if self.apple.center_x - 10 <= self.snake.center_x <= self.apple.center_x + 10 and self.apple.center_y - 10 <= self.snake.center_y <= self.apple.center_y + 10 :
             self.snake.eat()
-            self.apple = Apple(600, 400)
+            self.apple = Apple(config.width, config.height)
 
         # Snake: Collision with body
         if self.snake.score > 1:
