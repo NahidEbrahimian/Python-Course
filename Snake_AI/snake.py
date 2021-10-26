@@ -1,6 +1,6 @@
+import random
 import arcade
 import config
-import random
 
 
 class Snake(arcade.Sprite):
@@ -16,7 +16,7 @@ class Snake(arcade.Sprite):
         self.change_y = 0
         self.score = 0
         self.body = []
-        self.flag = 0
+        self.apple = 0
         self.direction = random.randint(0, 3)
 
     def draw(self):
@@ -28,8 +28,15 @@ class Snake(arcade.Sprite):
             else:
                 arcade.draw_circle_filled(item[0], item[1], self.r, self.color1)
 
-    def eat(self):
-        self.score += 1
+    def eat(self, fruit):
+        if fruit == 'apple':
+            self.apple += 1
+
+        if fruit == 'pear':
+            self.score += 2
+
+        if fruit == 'bomb':
+            self.score -= 1
 
     def move(self):
         if self.direction == 0:
@@ -52,71 +59,71 @@ class Snake(arcade.Sprite):
         self.center_y += self.speed * self.change_y
 
         self.body.append([self.center_x, self.center_y])
-        if len(self.body) > self.score:
+        if len(self.body) > self.apple:
             del (self.body[0])
 
-    def vision(self, apple):
+    def vision(self, fruit):
 
         # left
-        if self.center_x > apple.center_x and self.center_y == apple.center_y:
+        if self.center_x > fruit.center_x and self.center_y == fruit.center_y:
             for part in self.body:
-                if self.center_x > part[0] > apple.center_x and self.center_y == part[1]:
+                if self.center_x > part[0] > fruit.center_x and self.center_y == part[1]:
                     break
             else:
                 return '0'
 
         # left up
-        if self.center_x > apple.center_x and self.center_y > apple.center_y:
+        if self.center_x > fruit.center_x and self.center_y > fruit.center_y:
             for part in self.body:
-                if abs(self.center_x - part[0]) == abs(self.center_y - part[1]) and self.center_x > part[0] > apple.center_x and self.center_y > part[1] > apple.center_y:
+                if abs(self.center_x - part[0]) == abs(self.center_y - part[1]) and self.center_x > part[0] > fruit.center_x and self.center_y > part[1] > fruit.center_y:
                     break
             else:
                 return '02'
 
         # right
-        if self.center_x < apple.center_x and self.center_y == apple.center_y:
+        if self.center_x < fruit.center_x and self.center_y == fruit.center_y:
             for part in self.body:
-                if self.center_x < part[0] < apple.center_x and self.center_y == part[1]:
+                if self.center_x < part[0] < fruit.center_x and self.center_y == part[1]:
                     break
             else:
                 return '1'
 
         # down right
-        if self.center_x < apple.center_x and self.center_y < apple.center_y:
+        if self.center_x < fruit.center_x and self.center_y < fruit.center_y:
             for part in self.body:
-                if abs(self.center_x - part[0]) == abs(self.center_y - part[1]) and self.center_x < part[0] < apple.center_x and self.center_y < part[1] < apple.center_y:
+                if abs(self.center_x - part[0]) == abs(self.center_y - part[1]) and self.center_x < part[0] < fruit.center_x and self.center_y < part[1] < fruit.center_y:
                     break
             else:
                 return '31'
 
         # up
-        if self.center_x == apple.center_x and self.center_y > apple.center_y:
+        if self.center_x == fruit.center_x and self.center_y > fruit.center_y:
             for part in self.body:
-                if self.center_x == part[0] and self.center_y > part[1] > apple.center_y:
+                if self.center_x == part[0] and self.center_y > part[1] > fruit.center_y:
                     break
             else:
                 return '2'
 
         # up right
-        if self.center_x < apple.center_x and self.center_y > apple.center_y:
+        if self.center_x < fruit.center_x and self.center_y > fruit.center_y:
             for part in self.body:
-                if abs(self.center_x - part[0]) == abs(self.center_y - part[1]) and self.center_x < part[0] < apple.center_x and self.center_y > part[1] > apple.center_y:
+                if abs(self.center_x - part[0]) == abs(self.center_y - part[1]) and self.center_x < part[0] < fruit.center_x and self.center_y > part[1] > fruit.center_y:
                     break
             else:
                 return '21'
 
         # down
-        if self.center_x == apple.center_x and self.center_y < apple.center_y:
+        if self.center_x == fruit.center_x and self.center_y < fruit.center_y:
             for part in self.body:
-                if self.center_x == part[0] and self.center_y < part[1] < apple.center_y:
+                if self.center_x == part[0] and self.center_y < part[1] < fruit.center_y:
                     break
             else:
                 return '3'
 
         # down left
-        if self.center_x > apple.center_x and self.center_y < apple.center_y:
+        if self.center_x > fruit.center_x and self.center_y < fruit.center_y:
             for part in self.body:
-                if abs(self.center_x - part[0]) == abs(self.center_y - part[1]) and self.center_x > part[0] > apple.center_x and self.center_y < part[1] < apple.center_y:
+                if abs(self.center_x - part[0]) == abs(self.center_y - part[1]) and self.center_x > part[0] > fruit.center_x and self.center_y < part[1] < fruit.center_y:
                     break
             else:
                 return '30'
