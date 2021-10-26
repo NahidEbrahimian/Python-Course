@@ -32,7 +32,7 @@ class Game(arcade.Window):
 
         # Apple position
         if self.apple.center_x - 10 <= self.snake.center_x <= self.apple.center_x + 10 and self.apple.center_y - 10 <= self.snake.center_y <= self.apple.center_y + 10 :
-            self.snake.Eat()
+            self.snake.eat()
             self.apple = Apple(600, 400)
 
         # Snake: Collision with body
@@ -77,47 +77,6 @@ class Game(arcade.Window):
                     self.snake = Snake()
 
             self.snake.direction = direction
-            # snake.move()
-
-
-        # snake.move()
-        #
-        # self.display.fill(self.color)
-        # pygame.draw.rect(self.display, ((80, 80, 80)), ((0, 0), (600, 400)), 10)
-        #
-        # apple.draw(self.display)
-        # snake.draw(self.display)
-        #
-        # score = self.font.render(f'Score: {snake.score}', True, ((0, 0, 0)))
-        # score_rect = score.get_rect(center=(50, 400 - 20))
-        # self.display.blit(score, score_rect)
-        #
-        # pygame.display.update()
-        # clock.tick(10)
-    # def on_key_release(self, key, modifiers):
-    #
-    #     # left
-    #     if key == arcade.key.A:
-    #         self.snake.change_x = -1
-    #         self.snake.change_y = 0
-    #
-    #     # up
-    #     elif key == arcade.key.W:
-    #         self.snake.change_x = 0
-    #         self.snake.change_y = 1
-    #
-    #     # right
-    #     elif key == arcade.key.D:
-    #         self.snake.change_x = 1
-    #         self.snake.change_y = 0
-    #
-    #     # down
-    #     elif key == arcade.key.S:
-    #         self.snake.change_x = 0
-    #         self.snake.change_y = -1
-    #
-    #     if self.exit == 1:
-    #         arcade.exit()
 
 
 
